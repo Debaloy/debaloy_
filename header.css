@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100;0,300;0,500;1,100;1,300;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Saira', sans-serif;
+}
+
+body {
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    color: white;
+    background-color: #09182b;
+}
+
+header {
+    margin: 28px 40px 0 40px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 20px;
+}
+
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2em;
+}
+
+.name, .nav-links, li {
+    display: inline-block;
+}
+
+.name a {
+    font-size: 1.6em;
+    letter-spacing: 0.1em;
+    color: rgb(130, 255, 201);
+    transition: 0.2s ease-in;
+}
+
+.name a:hover {
+    color: #fff;
+}
+
+.nav-links {
+    float: right;
+}
+
+.nav-links li a{
+    margin: 0 30px;
+    padding: 0 20px;
+    letter-spacing: 0.2em;
+    transition: 0.2s ease-in;
+}
+
+.nav-links li a:hover {
+    color: rgb(130, 255, 255);
+}
+
+.nav-menu {
+    display: none;
+}
+
+@media (max-width: 1120px) {
+    .name a {
+        font-size: 1.19em;
+    }
+    .nav-links li a {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 980px) {
+    header {
+        padding: 0 20px;
+    }
+    .nav-links li a {
+        margin: 0 20px;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 980px) {
+    .nav-links li a {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 750px) {
+    .nav-links li a {
+        padding: 0;
+    }
+}
+
+@media (max-width: 620px) {
+    .nav-links {
+        display: none;
+    }
+    .nav-menu {
+        display: block;
+    }
+}
